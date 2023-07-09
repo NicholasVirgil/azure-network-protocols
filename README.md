@@ -51,9 +51,97 @@ Here we are going to create our first virtual machine within Azure. Our first vi
 <br />
 
 <p>
+<img src="https://i.imgur.com/zLY0QZJ.png" height="80%" width="80%" alt="Linux Virtual Machine"/>
+</p>
+<p>
+Next, we are going to create a Linux Virtual Machine using the Ubuntu Server, and make sure we are on the sane virtual network as VM1 in the following step.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/nb4LZmG.png" height="80%" width="80%" alt="VM1 vnet"/>
+</p>
+<p>
+Virtual Network VM1, make sure VM2 is on the same network as VM1 by selecting, "VM1-vnet/default". This step is important as we will be able to analyze the traffic on the same network when we ping VM2's private IP Address and view it through <a href=https://www.wireshark.org/download.html>Wireshark</a> the traffic analyzer tool which we will download in a future step.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/yqwKQqO.png" height="80%" width="80%" alt="VM1 Public IP Address"/>
+</p>
+<p>
+Now that we have created our virtual machines, we can go ahead inside Microsoft Azure and click on VM1's virtual machine, and look for VM1's public IP address. We're going to need this to remotely log into VM1's virtual machine using Microsoft Remote Desktop on Mac which you can download for free inside the App Store. After Microsoft Remote Desktop has finished downloading, we will now open it, copy and paste the public IP address into the "PC name" section in the following step.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/ygwJjhw.png" height="80%" width="80%" alt="Microsoft Remote Desktop settings"/>
+</p>
+<p>
+While we still have Microsoft Remote Desktop open, we want to make sure everything is set up as is inside the screenshot and click add. Double check that you have the correct public IP address so that we can connect to our Windows virtual machine.
+</p>
+<br />
+
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 </p>
 <br />
