@@ -46,7 +46,7 @@ First, we create our first Resource Group called AZ-Compute-Network where all of
 <img src="https://i.imgur.com/ywrHP61.png" height="80%" width="80%" alt="Virtual Machine"/>
 </p>
 <p>
-Here we are going to create our first virtual machine within Azure. Our first virtual machine is going to be a Windows 10 VM.
+Here we are going to create our first virtual machine within Azure. Our first virtual machine is going to be a Windows 10 VM called VM1, and the username is going to be my first name and last initial, "NicholasV".
 </p>
 <br />
 
