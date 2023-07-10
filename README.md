@@ -134,7 +134,7 @@ While our virtual machine (VM1) continues to send pings to VM2's private IP addr
 <img src="https://i.imgur.com/4mSBFId.png" height="80%" width="80%" alt="Network Security Rule"/>
 </p>
 <p>
-This is where we are going to set up our Inbound Network Security Rule. This allows for us to customize our firewall settings based on the protocol we choose, in this case, we will set it up based off of the ICMP protocol since that is the protocol we have filtered our traffic by inside of Wireshark so we can actually analyze and view the data. Since we don't want any traffic going to VM2's private IP address, we are going to set our Action to Deny inside of our Inbound Network Security Rule to block any traffic going to that IP address. We are also going to set the priority to 200, set up a custom name for our inbound rule just so we have a description of what our custom rule entails.
+This is where we are going to set up our Inbound Network Security Rule. This allows for us to customize our firewall settings based on the protocol we choose, in this case, we will set it up based off of the ICMP protocol since that is the protocol we have filtered our traffic by inside of Wireshark so we can actually analyze and view the data. Since we don't want any traffic going to VM2's private IP address, we are going to set our Action to Deny inside of our Inbound Network Security Rule to block any traffic going to that IP address. We are also going to set the priority to 200 so that it's top priority over the other rules, set up a custom name for our inbound rule just so we have a description of what our custom rule entails.
 </p>
 <br />
 
@@ -147,26 +147,28 @@ After we have successfully set up our custom firewall settings, you can see base
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/7leb5fN.png" height="80%" width="80%" alt="Wireshark analyzer showing no response from virtual machine 2"/>
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+As previously discussed, if you take a look at Command Prompt, it says, "Request timed out", and in Wireshark, it says "no response found!". This means that our firewall is active and VM2 is no longer replying back to any pings to its private IP address because our firewall settings that we set up earlier has blocked and denied that traffic. 
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/AODyiJh.png" height="80%" width="80%" alt="Inbound Security Rule settings inside of Azure"/>
 </p>
 <p>
+If we head back to our Inbound Security Rule where we set up our firewall, when we set the action to Allow, VM2 can now start receiving ping requests to its private IP address again.
+<img src="https://i.imgur.com/mdkCd5Y.png" height ="80%" width="80%" alt="Wireshark"/>
+</p>
+<br />
+<br />
 
+<p>
+<img src="https://i.imgur.com/z5FZSba.png" height="80%" width="80%" alt="Remote Linux Secure Shell"/>
+</p>
+<p>
+In this step, we're going to go over the SSH protocol, port 22. This allows us to login to a remote server to execute commands and data transfer from one machine to another machine. We created a Linux virtual machine using the Ubuntu server inside of our Azure setup. In this example we remotely login to VM2's secure shell and if you remember from our previous setup for this VM, the username that we created was guest123. We're going to go ahead and filter the traffic inside of Wireshark to port 22 so we can analyze the traffic in for this protocol in the next steps.
 </p>
 <br />
 
