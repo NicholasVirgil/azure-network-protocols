@@ -83,42 +83,42 @@ While we still have Microsoft Remote Desktop open, we want to make sure everythi
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/43MprWM.png" height="80%" width="80%" alt="Remote Desktop username and password"/>
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-
+Enter your username and password that you created in Microsoft Azure and click connect, mine is my first name and last initial.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/fobm1Z9.png" height="80%" width="80%" alt="Windows loading screen"/>
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-
+<p>After you have entered your credentials successfully, you should see the loading screen on the Windows virtual machine showing your username that you created. In this example, my first name and last initial.</p>
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/PYXDTAH.png" height="80%" width="80%" alt="Wireshark website"/>
 </p>
 <p>
+Now that we are logged in the Windows 10 virtual machine, it's time to download Wireshark. Download and install the "Windows Intel Installer" version in your Windows 10 virtual machine.
+</p>
+<br />
 
+<p>
+<img src="https://i.imgur.com/ITyDstg.png" height="80%" width="80%" alt="private IP address for virtual machine 2"/>
+</p>
+<p>
+After Wireshark has been downloaded and installed, we're going to go back to Microsoft Azure and inside of your Resource Group, click on the second virtual machine that we created earlier, look for the Networking tab, and click on it and take note of the private IP address. In this example, it will be 10.0.0.5. We're going to analyze the traffic inside Wireshark when we ping this address from our first virtual machine (VM1) that we created.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/TDhxFWt.png" height="80%" width="80%" alt="Wireshark traffic analyzer"/>
+</p>
+<p>
+Next, we will open Wireshark and filter the traffic by ICMP (Internet Control Messaging Protocol) a protocol that devices within a network use to communicate problems with data transmission. I have opened Command Prompt inside of our virtual machine with wireshark installed. If you look carefully, I have set a perpetual ping from VM1 to VM2's private IP address inside of Command Prompt and you can see the requests and replies inside of the activity inside of Wireshark. This indicates that our virtual machine are receiving the data packets on the network.
 </p>
 <br />
 
