@@ -118,12 +118,36 @@ After Wireshark has been downloaded and installed, we're going to go back to Mic
 <img src="https://i.imgur.com/TDhxFWt.png" height="80%" width="80%" alt="Wireshark traffic analyzer"/>
 </p>
 <p>
-Next, we will open Wireshark and filter the traffic by ICMP (Internet Control Messaging Protocol) a protocol that devices within a network use to communicate problems with data transmission. I have opened Command Prompt inside of our virtual machine with wireshark installed. If you look carefully, I have set a perpetual ping from VM1 to VM2's private IP address inside of Command Prompt and you can see the requests and replies inside of the activity inside of Wireshark. This indicates that our virtual machine are receiving the data packets on the network.
+Next, we will open Wireshark and filter the traffic by ICMP (Internet Control Messaging Protocol) a protocol that devices within a network use to communicate problems with data transmission. I have opened Command Prompt inside of our virtual machine with wireshark installed. If you look carefully, I have set a perpetual ping from VM1 to VM2's private IP address inside of Command Prompt and you can see the requests and replies under the info section inside of Wireshark. This indicates that our virtual machine is receiving the data packets on the network.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/og8xaPY.png" height="80%" width="80%" alt="Virtual Machine 2 Network settings inside of Azure"/>
+</p>
+<p>
+While our virtual machine (VM1) continues to send pings to VM2's private IP address, we're going to head back into Microsoft Azure and click on VM2, and go to Settings, and click on Network. We are going to add an Inbound Rule, this is where we are going to set up our firewall inside of our NSG (Network Security Group) to block any incoming traffic to VM2's IP address. 
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/4mSBFId.png" height="80%" width="80%" alt="Network Security Rule"/>
+</p>
+<p>
+This is where we are going to set up our Inbound Network Security Rule. This allows for us to customize our firewall settings based on the protocol we choose, in this case, we will set it up based off of the ICMP protocol since that is the protocol we have filtered our traffic by inside of Wireshark so we can actually analyze and view the data. Since we don't want any traffic going to VM2's private IP address, we are going to set our Action to Deny inside of our Inbound Network Security Rule to block any traffic going to that IP address. We are also going to set the priority to 200, set up a custom name for our inbound rule just so we have a description of what our custom rule entails.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/JUTu1dG.png" height="80%" width="80%" alt="Inbound Rule Priority"/>
+</p>
+<p>
+After we have successfully set up our custom firewall settings, you can see based on the category what each custom rule is set to based on how we set everything up from our previous example. If we head over to Wireshark, we should now see the traffic being blocked inside of the traffic analyzer and see that there isn't a reply from VM2 in the following example.
+</p>
+<br />
+
+<p>
+<img src="" height="80%" width="80%" alt=""/>
 </p>
 <p>
 
@@ -131,7 +155,7 @@ Next, we will open Wireshark and filter the traffic by ICMP (Internet Control Me
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt=""/>
 </p>
 <p>
 
@@ -139,7 +163,39 @@ Next, we will open Wireshark and filter the traffic by ICMP (Internet Control Me
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt=""/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="" height="80%" width="80%" alt=""/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="" height="80%" width="80%" alt=""/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="" height="80%" width="80%" alt=""/>
+</p>
+<p>
+
+</p>
+<br />
+
+<p>
+<img src="" height="80%" width="80%" alt=""/>
 </p>
 <p>
 
