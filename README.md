@@ -10,7 +10,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
+<a href="#">[YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)</a>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -24,13 +24,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
-
-<h2>High-Level Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
 
 <h2>Actions and Observations</h2>
 
