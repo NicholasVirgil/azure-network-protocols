@@ -188,25 +188,17 @@ Inside of our Linux secure shell, we're going to execute some basic Linux comman
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/IBFQWDX.png" height="80%" width="80%" alt="Domain Name System protocol"/>
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+The next protocol we're going to take a look at is the DNS protocol inside of Wireshark. DNS lets users enter a host name and find out the corresponding IP address or domain name system (DNS) record. In this example, we type the command "<strong>nslookup</strong> www.disney.com" inside of Command Prompt, and see the public IP addresses that corresponds with the host name found inside the alias of Command Prompt. It even shows the destination of the public IP address and some additional info inside of Wireshark.
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/2oKAzKJ.png" height="80%" width="80%" alt="Remote Desktop Protocol"/>
 </p>
 <p>
-
+The last protocol we're going to cover in this lab is the Remote Desktop Protocol (RDP) filtered in Wireshark by port number 3389. In this screenshot, I was only able to capture the data that Wireshark distributed at the time, but realistically, because we are connected through TCP, there is a constant connection and flow of data always moving inside of Wireshark, so it's difficult to actually capture the traffic happening with the human eye. Essentially, if it isn't obvious by now, showing the above examples in this entire lab was possible because we have a remote connection to our virtual machine, which allows us to analyze the data that was happening in the first place via Wireshark and Command Prompt installed on our virtual machine. Because of this protocol, we can even work from home and access a company computer remotely via RDP, as long as we have the credentials to do so.
 </p>
 <br />
