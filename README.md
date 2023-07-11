@@ -182,7 +182,7 @@ Inside of our Linux secure shell, we're going to execute some basic Linux comman
     <li><strong>touch</strong> which we use to create a text file with a file extension ".txt" , in this example: helloworld.txt</li>
     <li><strong>ls -lasth</strong> displays a list of files inside of our current directory</li>
     <li><strong>rm</strong> deletes a file inside of a directory, in this case we use this command to delete helloworld.txt</li>
-    <li><strong>exit</strong> to logout of guest123VM2 and close the connection to our Linux secure shell</li>
+    <li><strong>exit</strong> to logout of guest123@VM2 and close the connection to our Linux secure shell</li>
   </ul>
 </p>
 <br />
