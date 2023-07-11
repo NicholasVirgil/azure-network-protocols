@@ -47,7 +47,7 @@ Here we are going to create our first virtual machine within Azure. Our first vi
 <img src="https://i.imgur.com/zLY0QZJ.png" height="80%" width="80%" alt="Linux Virtual Machine"/>
 </p>
 <p>
-Next, we are going to create a Linux Virtual Machine using the Ubuntu Server, and make sure we are on the sane virtual network as VM1 in the following step.
+Next, we are going to create a Linux Virtual Machine using the Ubuntu Server, and make sure we are on the same virtual network as VM1 in the following step.
 </p>
 <br />
 
