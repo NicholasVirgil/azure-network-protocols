@@ -168,15 +168,22 @@ If we head back to our Inbound Security Rule where we set up our firewall, when 
 <img src="https://i.imgur.com/z5FZSba.png" height="80%" width="80%" alt="Remote Linux Secure Shell"/>
 </p>
 <p>
-In this step, we're going to go over the SSH protocol, port 22. This allows us to login to a remote server to execute commands and data transfer from one machine to another machine. We created a Linux virtual machine using the Ubuntu server inside of our Azure setup. In this example we remotely login to VM2's secure shell and if you remember from our previous setup for this VM, the username that we created was guest123. We're going to go ahead and filter the traffic inside of Wireshark to port 22 so we can analyze the traffic in for this protocol in the next steps.
+In this step, we're going to go over the SSH protocol, port 22. This allows us to login to a remote server to execute commands and data transfer from one machine to another machine. We created a Linux virtual machine using the Ubuntu server inside of our Azure setup. In this example we remotely login to VM2's secure shell and if you remember from our previous setup for this VM, the username that we created was guest123. We're going to go ahead and filter the traffic inside of Wireshark to port 22 so we can analyze the traffic for this protocol in the next steps.
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/DerTPUM.png" height="80%" width="80%" alt="Linux commands"/>
 </p>
 <p>
-
+Inside of our Linux secure shell, we're going to execute some basic Linux commands. In this example, we type the following commands:
+  <ul>
+    <li><strong>uname -a</strong> prints the name, version and other details about the current machine and the operating system running on it.</li>
+    <li><strong>touch</strong> which we use to create a text file with a file extension ".txt" , in this example: helloworld.txt</li>
+    <li><strong>ls -lasth</strong> displays a list of files inside of our current directory</li>
+    <li><strong>rm</strong> deletes a file inside of a directory, in this case we use this command to delete helloworld.txt</li>
+    <li><strong>exit</strong> to logout of guest123VM2 and close the connection to our Linux secure shell</li>
+  </ul>
 </p>
 <br />
 
